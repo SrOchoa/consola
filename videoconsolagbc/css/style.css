@@ -1,0 +1,112 @@
+body{
+    background: rgb(0, 0, 0);
+  }
+  
+  #gameboy{
+    position: relative;
+    top: 200px;
+    margin: 0px auto;
+    height: 400px;
+    width: 250px;
+    background: rgba(238, 238, 238, 0.541);
+    border-radius: 10px 10px 35px 10px;
+
+  }
+  #pantalla{
+    position: absolute;
+    width: 227px;
+    height: 185px;
+    left: 12px;
+    top: 20px;
+    background: rgb(185, 185, 154);
+    border-radius: 5px 5px 20px 5px;
+  }
+
+  #jostick{
+    position: absolute;
+    width: 13px;
+    height: 40px;
+    top: 255px;
+    left: 25px;
+    background: #444;
+    border-radius: 3px;
+    z-index: 1001;
+  }
+  
+  #jostick::after{
+    position: absolute;
+    width: 40px;
+    height: 13px;
+    top: 13px;
+    left: -13px;
+    background: rgb(0, 0, 0);
+    border-radius: 3px;
+    content: "";
+    z-index: 1002;
+  }
+  #jostick:before{
+    position: absolute;
+    height: 13px;
+    width: 13px;
+    top: 20px;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, 0.205);
+    content: "";
+    z-index: 1004;
+  }
+  #mando{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 250px;
+    left: 7px;
+    background: #DFDFDF;
+    border-radius: 100%;
+  }
+  #mando:before{
+    position: absolute;
+    width: 30px;
+    height: 60px;
+    left: 170px;
+    background: #DFDFDF;
+    border-radius: 12px;
+    transform: rotate(45deg);
+    content: "";
+  }
+  #mando:after{
+    position: absolute;
+    height: 25px;
+    width: 3px;
+    top: 115px;
+    left: 185px;
+    border-radius: 2px;
+    background: rgba(221, 221, 221, 0.829);
+    transform: rotate(-45deg);
+    box-shadow: 7px 0px #DDD,
+                14px 0px #DDD,
+                21px 0px #DDD,
+                28px 0px #DDD,
+                35px 0px #DDD;
+     content: "";
+  }
+  #boton1{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 277px;
+    right: 57px;
+    border-radius: 100%;
+    background: #b33434;
+    box-shadow: 20px -20px #ff000083;
+  }
+  #boton2{
+    position: absolute;
+    height: 25px;
+    width: 6px;
+    bottom: 25px;
+    left: 55px;
+    background: rgb(14, 7, 7);
+    border-radius: 3px;
+    transform: rotate(45deg);
+    box-shadow: 17px -17px rgb(12, 8, 8);
+  }
